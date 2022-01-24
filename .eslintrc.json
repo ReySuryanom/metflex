@@ -4,9 +4,17 @@
     "prettier",
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended"
   ],
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "rules": {
+    "react/prop-types": "off",
     "react-hooks/exhaustive-deps": [
       "warn",
       {
