@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Header, MovieLists } from '../components';
+import { Footer, Header, MovieLists } from '../components';
 
 function HomePage() {
   return (
@@ -11,13 +11,14 @@ function HomePage() {
       </Head>
       <Header />
       <span className="block w-full border-b-[0.01px] border-gray-600 pt-4 bg-[#26262D]" />
-      <main className="text-white px-5 bg-[#26262D] divide-y divide-gray-600 pt-3 space-y-10">
+      <main className="text-white px-5 bg-[#26262D] divide-y divide-gray-600 pt-3 space-y-10 pb-10">
         <MovieLists category="comedy" />
         <MovieLists category="action" />
         <MovieLists category="horror" />
-        {/* <MovieLists category="family" />
-        <MovieLists category="romance" /> */}
+        <MovieLists category="family" />
+        <MovieLists category="romance" />
       </main>
+      <Footer />
     </>
   );
 }
