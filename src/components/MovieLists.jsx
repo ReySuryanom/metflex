@@ -11,7 +11,9 @@ function MovieLists({ category }) {
 
   return (
     <section className="">
-      <h2 className="my-4 text-xl font-medium capitalize">{category}</h2>
+      <h2 className="my-4 text-xl font-medium capitalize md:text-2xl lg:text-3xl">
+        {category}
+      </h2>
       <div className="flex items-center space-x-1 overflow-x-auto snap-x">
         {movies?.Search.map((item) => (
           <Movie key={item.imdbID} {...item} />
