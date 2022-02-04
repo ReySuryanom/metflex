@@ -9,7 +9,7 @@ function MovieLists({ category, vertical }) {
   if (isLoading) {
     return <Loading />;
   }
-  console.log(movies);
+
   if (movies?.Response === 'False') {
     return <Error message={movies.Error} />;
   }
